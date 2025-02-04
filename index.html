@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./common/css/common.css" />
+    <link rel="stylesheet" href="./common/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./common/css/bootstrap.docs.css" />
+    <link rel="stylesheet" href="./common/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./common/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- JS Files -->
+    <script src="./common/js/bootstrap.min.js"></script>
+    <script src="./common/js/jQuery.min.js"></script>
+    <script src="./common/js/owl.carousel.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./common/assets/favicon.png" />
+
+    <style>
+        #cardWrapper .item {
+            width: 18rem;
+            aspect-ratio: 4/4;
+            border-radius: 8px;
+            padding: 10px;
+            background: linear-gradient(0deg, #a9b7c8, #ffffff);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            margin: 20px;
+            border: 1px solid #90aecd;
+        }
+        #cardWrapper .item .image_wrapper {
+            height: 35%;
+            width: auto;
+            margin-bottom: 20px;
+        }
+
+        .image_wrapper img {
+            height: 100%;
+            object-fit: contain;
+            mix-blend-mode: darken;
+        }
+
+        .item p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c4458;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 430px) {
+            #iLike {
+                height: auto;
+            }
+            #homePage {
+                height: auto;
+            }
+            #homePage > div {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <title>MKCL | iLike</title>
+</head>
+
+<body>
+    <!-- iLike Section -->
+    <nav id="iLike" class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <p class="m-0" style="font-size: 18px;font-weight: 500;color: #374358"> Incredible Learning Innovations for Knowledge Empowerment</p>
+            <a class="navbar-brand" href="#">
+                <img src="./assets/home/logo-ilike.jpg" height="30px" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div style="height: calc(100% - 60px);width: 100%;overflow: hidden;position: relative;">
+        <div class="h-full w-full absolute">
+            <div class="h-full w-full absolute" style="background: linear-gradient(180deg, #000000e0, #0000004f);">
+            </div>
+            <img src="./assets/home/bg.jpg" class="h-full w-full object-fit--cover" />
+        </div>
+
+        <div id="homePage" class="h-full w-full relative flex flex-col justify-center">
+            <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <img src="./common/assets/logo_mkcl.svg" height="60px" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="material-icons text-white">menu</i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="listOfCourses.html">List of Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="softwareTools.html">Software Tools</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="acadmicSpecifaction.html">Acadmic Specifaction</a></li>
+                                    <li><a class="dropdown-item" href="hardwareSpecifaction.html">Hardware Specifaction</a></li>
+                                    <li><a class="dropdown-item" href="sampleCertificate.html">Sample Certificate</a></li>
+                                    <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >Apply for iLike Lab</button>
+
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleInterval" class="carousel slide h-full flex items-center" data-bs-ride="carousel">
+                <div class="container carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <h2 style="color: var(--orange);font-weight: 700;">Incredible Learning Innovations for Knowledge Empowerment</h2>
+                        <p class="text-white">MKCL offers career-oriented courses that help students enter emerging local and global careers by aligning with industry roles, technologies, and certification standards. These courses foster job readiness, confidence, and a growth mindset. Under the ‘iLike’ brand, MKCL provides creditized courses as per the National Credit Framework (NCrF) 2023, bridging college to careers.</p>
+                        <button class="btn btn-success relative" type="submit">
+                            <a href="./assets/pdf/iLike_Brochure.pdf" class="absolute inset-0" download></a>
+                            Download Broucher
+                        </button>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <h2 style="color: var(--orange);font-weight: 700;">Maharashtra Knowledge Corporation Limited (MKCL)</h2>
+                        <p class="text-white"> Maharashtra Knowledge Corporation Limited (MKCL) was established by the Department of Higher & Technical Education, Government of Maharashtra under the Companies Act, 1956. Since January 5, 2018, its coordination has been managed by the General Administration Department (GAD) and later assigned to the Directorate of Information Technology under GAD.</p>
+                        <div style="height: 37px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Heading -->
+    <div style="padding: 20px;margin-top: 80px;background-color:var(--light-blue);">
+        <p style="font-size: 22px;font-weight: 700;color: #374358;text-align: center;margin: 0;">MoUs signed With Educational Institutes</p>
+    </div>
+    <!-- Carousel Images -->
+    <div id="cardWrapper" class="owl-carousel owl-theme my-5"></div>
+
+    <!-- List Section -->
+    <div class="container h-full flex flex-col my-5">
+        <h4 class="mb-3" style="font-size: 25px;font-weight: 700;color: #374358;text-align: center;margin: 0;">Our College Network</h4>
+        <div class="grow overflow-auto pr-10">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sr No.</th>
+                        <th> college Name</th>
+                        <th>District</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--footer Section -->
+    <div style="background-color: #374358;" class="flex py-10 items-center justify-center text-white">
+        <p style="text-align: center;">Powered by Maharashtra Knowldege Corporation Ltd (MKCL) as Knowledge Partner and Solution Architect.<br>Copyright © 2024. All rights reserved by MKCL</p>
+    </div>
+
+
+    <!-- application form Modal -->
+    <div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="h-full flex items-center modal fade modal-dialog-scrollable" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog" style="height: calc(100% - 56px);">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-size: 20px;font-weight: 700;color: #374358">MKCL's iLike Education Institute Registration Process-2025</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Educational Institute / Organization Details</label>
+                            <input class="form-control" id="input1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Select type of Educational Institute / Organization </label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">Affiliated Colleges</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault1">Autonomous Colleges</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Select Head of the Educational Institute / Organization *</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">Principal</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Director
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Trustee
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="input1" class="form-label">Enter Name of Affiliated University</label>
+                            <input class="form-control" id="input1">
+                        </div>
+                        <div class="mb-3">
+                                <label for="input2" class="form-label">Enter Name of Head of the Institute / Organization</label>
+                                <input class="form-control" id="input2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input3" class="form-label">State Name</label>
+                            <input class="form-control" id="input3">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input4" class="form-label">District Name</label>
+                            <input class="form-control" id="input4">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input5" class="form-label">Taluka Name</label>
+                            <input class="form-control" id="input5">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input6" class="form-label">City Name</label>
+                            <input class="form-control" id="input6">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input7" class="form-label">Address</label>
+                            <input class="form-control" id="input7">
+                        </div>
+                    </form>
+                    <div  style="padding: 20px;margin-bottom: 20px;background-color:var(--light-blue);">
+                        <h5 style="color: #374358 ;text-align: center;">Co-ordinator Details</h5>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"> Co-ordinator's Name</label>
+                            <input class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Email ID</label>
+                            <input class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+                            <input class="form-control" >
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit Application</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+<script>
+    var collageList = [
+        {
+            id: 1,
+            collage_Name: "Shri Guru Gobind Singhji Institute Of Engineering And Technology",
+            District: "Nanded",
+        },
+        {
+            id: 2,
+            collage_Name: "Kce Society'S Dr. Apj Abdul Kalam Skill Development Centre",
+            District: "Jalgaon",
+        },
+        {
+            id: 3,
+            collage_Name: "Shikshan Prasarak Sanstha'S, S. N. Arts, D.J. Malpani Comm. & B.N. Sarda Sci. College Sangamner",
+            District: "Ahmednagar",
+        },
+        {
+            id: 4,
+            collage_Name: "Dnyandeep College Of Science And Commerce",
+            District: "Ratnagiri",
+        },
+        {
+            id: 5,
+            collage_Name: "Nya. Tatyasaheb Athalye Arts, Ved. S.R.Sapre Commerce And Vid. Dadasaheb Pitre Science College, Dev.",
+            District: "Ratnagiri",
+        },
+        {
+            id: 6,
+            collage_Name: "Shri Bhimashankar B.Ed. College Landewadi",
+            District: "Pune",
+        },
+        {
+            id: 7,
+            collage_Name: "Smt . Durgadevi Sharma Charitable Trust'S, Chandrabhan Sharma College Of Arts Commerce And Science",
+            District: "Mumbai Eastern Suburbs",
+        },
+        {
+            id: 8,
+            collage_Name: "Siddhant College Of Engineering,Sudumbare,Pune",
+            District: "Pune",
+        },
+        {
+            id: 9,
+            collage_Name: "Pvgs Coet And Gkp(W)Im Pune",
+            District: "Pune",
+        },
+        {
+            id: 10,
+            collage_Name: "Vidya Pratishthan'S Polytechnic College",
+            District: "Pune",
+        },
+        {
+            id: 1,
+            collage_Name: "Shri Guru Gobind Singhji Institute Of Engineering And Technology",
+            District: "Nanded",
+        },
+        {
+            id: 2,
+            collage_Name: "Kce Society'S Dr. Apj Abdul Kalam Skill Development Centre",
+            District: "Jalgaon",
+        },
+        {
+            id: 3,
+            collage_Name: "Shikshan Prasarak Sanstha'S, S. N. Arts, D.J. Malpani Comm. & B.N. Sarda Sci. College Sangamner",
+            District: "Ahmednagar",
+        },
+        {
+            id: 4,
+            collage_Name: "Dnyandeep College Of Science And Commerce",
+            District: "Ratnagiri",
+        },
+        {
+            id: 5,
+            collage_Name: "Nya. Tatyasaheb Athalye Arts, Ved. S.R.Sapre Commerce And Vid. Dadasaheb Pitre Science College, Dev.",
+            District: "Ratnagiri",
+        },
+        {
+            id: 6,
+            collage_Name: "Shri Bhimashankar B.Ed. College Landewadi",
+            District: "Pune",
+        },
+        {
+            id: 7,
+            collage_Name: "Smt . Durgadevi Sharma Charitable Trust'S, Chandrabhan Sharma College Of Arts Commerce And Science",
+            District: "Mumbai Eastern Suburbs",
+        },
+        {
+            id: 8,
+            collage_Name: "Siddhant College Of Engineering,Sudumbare,Pune",
+            District: "Pune",
+        },
+        {
+            id: 9,
+            collage_Name: "Pvgs Coet And Gkp(W)Im Pune",
+            District: "Pune",
+        },
+        {
+            id: 10,
+            collage_Name: "Vidya Pratishthan'S Polytechnic College",
+            District: "Pune",
+        }
+    ];
+
+    var collageImageList = [
+        {
+            "img":"aissms-logo.png",
+            "name":"AISSMS Institute of Information Technology, Pune",
+        },
+        {
+            "img":"apsdevrukh-logo.png",
+            "name":"DSPM's Nya. Tatyasaheb Athalye Arts, Ved. S.R. Sapre Commerce & Vid. Dadasaheb Pitre Science College, Ratnagiri",
+        },
+        {
+            "img":"kk-wagh-logo.png",
+            "name":" K. K. Wagh Institute Of Engineering Education And Research, Nashik ",
+        },
+        {
+            "img":"kvp-logo.png",
+            "name":" Dombivli Shikshan Prasarak Mandal’s K.V. Pendharkar College of Arts, Science and Commerce, Dombivali ",
+        },
+        {
+            "img":"MET_Educational_Institutes.png",
+            "name":" MET Educational Institutes ",
+        },
+        {
+            "img":"Modern _College_Logo_Pune.png",
+            "name":" Progressive Education Society's Modern College of Engineering (MBA Department), Pune ",
+        },
+        {
+            "img":"sggs-logo.png",
+            "name":"Shri Guru Gobind Singhji Institute of Engineering & Technology, Nanded",
+        },
+    ]
+
+
+    fetchTableData();
+    createCarousel();
+
+//fetch data
+    function fetchTableData() {
+        let tableBody = document.getElementById("tableBody");
+
+        collageList.map((item) => {
+            let tr = document.createElement("tr");
+            tr.innerHTML = `<td>${item.id}</td><td>${item.collage_Name}</td><td>${item.District}</td>`;
+            tableBody.appendChild(tr);
+        });
+    }
+
+    //carousel
+    function createCarousel() {
+        let str = '';
+        for(let i in collageImageList) {
+            str += `<div class="item">
+            <div class="image_wrapper">
+                <img class="w-full" src="./assets/home/${collageImageList[i].img}" alt=""/>
+            </div>
+            <p>${collageImageList[i].name}</p>
+            </div>`
+        }
+
+        $('#cardWrapper').html(str);
+
+
+        $('.owl-carousel').owlCarousel({
+            items:4,
+            loop:true,
+            dots:false,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                768:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav: false
+                }
+            }
+        });
+    }
+</script>
+</html>
